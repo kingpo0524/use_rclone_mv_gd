@@ -19,7 +19,7 @@ GCP(Google Cloud Platform)為Google提供的雲端平台。在GCP申請一台雲
 ![183279257-57b10103-6fcd-4110-b0e9-c340cdafc672-compressed](https://user-images.githubusercontent.com/106213982/183292546-3ef47166-9eda-4fcb-8348-adf96fc76de1.jpg)
 * 本文使用 rclone 版本為 v1.59.0
 
-## 一. 申請Google Cloud Platform (gcp)
+## 一. 申請Google Cloud Platform (gcp) 並建立虛擬機器VM
 1. 申請網址: https://cloud.google.com/free?hl=zh-tw<br>
 直接點集"免費試用"，這邊可以看到新客戶可以有300美元抵免額。
 ![183279285-7058ceb4-8348-44b6-b916-cbf1f4a62895-compressed](https://user-images.githubusercontent.com/106213982/183292618-20b5b00f-3a09-43c5-b3da-d364f1896d40.jpg)
@@ -72,15 +72,21 @@ GCP(Google Cloud Platform)為Google提供的雲端平台。在GCP申請一台雲
 到這裡，我們完成在GCP上建立虛擬機器VM，並且設定VM執行的作業系統為Linux CentOS7，透過瀏覽器視窗可以開啟連接VM的指令介面終端機。接著，我們可以開始操作VM，安裝Rclone等相關工具。然後就可以使用Rclone開始搬移Google Driver的資料。
 ![183280304-43793c7d-9bd8-46fc-b1fe-40a9ab7e9e19-compressed](https://user-images.githubusercontent.com/106213982/183295672-7a8f2c82-80f9-454e-b6e0-77aab76e23aa.jpg)
 
-## Rclone
+## 二. 安裝Rclone及其他方便的工具
+1. 我們先安裝必要的 unzip 與 screen，unzip為解壓縮軟體，screen指令可以方便我們連回執行中的畫面查看執行結果<br>
+輸入指令：sudo yum install -y unzip screen
 ![183281693-699c4da2-2d6f-42a6-8b76-2009c1e273fc-compressed](https://user-images.githubusercontent.com/106213982/183295723-a1bd8f81-8800-43a4-9070-02ec5adfe5e1.jpg)
-
+2. 看到Complete! 即表示安裝完成。
 ![183281699-39a2eb80-5536-4e00-989b-5cf80a6693dc-compressed](https://user-images.githubusercontent.com/106213982/183295752-678adcd3-0c42-4f2f-9633-127ebb6c4486.jpg)
-
+3. 將時間格式調整為台灣時間<br>
+輸入指令：sudo ln -sf /usr/share/zoneinfo/Asia/Taipei /etc/localtime<br>
+輸入指令：date<br>
 ![183281775-99a7cc49-06da-4740-bc06-a39c7a90d0c7-compressed](https://user-images.githubusercontent.com/106213982/183295785-d3805368-55fd-48d7-b814-3bb813e3d0a1.jpg)
-
+4. 安裝Rclone<br>
+輸入指令：curl https://rclone.org/install.sh | sudo bash
 ![183281890-7b9d27f2-4f9c-40d7-b0b0-0dca7efe7925-compressed](https://user-images.githubusercontent.com/106213982/183295804-cf7f568e-8b6b-45f1-8a18-8ba04630f2be.jpg)
-
+5. 安裝完畢，查看Rclone版本，本文使用的版本為v1.59.0<br>
+輸入指令：rclone version
 ![183281900-c5d92688-e05f-4b38-991f-b1504113c88a-compressed](https://user-images.githubusercontent.com/106213982/183295839-17325fa9-6a4e-4add-9543-2e792ee38c6e.jpg)
 
 ### Rclone設定
