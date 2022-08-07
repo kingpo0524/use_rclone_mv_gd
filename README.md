@@ -35,35 +35,35 @@ GCP(Google Cloud Platform)為Google提供的雲端平台。在GCP申請一台雲
 ![183279319-3c89fba8-7042-45ea-9ea9-301de7189117-compressed](https://user-images.githubusercontent.com/106213982/183292912-c0c66c0a-7f77-426e-baf8-ff62c53c98a4.jpg)
 6. 
 ![183279412-11cecf6e-8d31-4156-bc31-84a38f632988-compressed](https://user-images.githubusercontent.com/106213982/183292926-f75ee9ee-6b00-4077-a7d7-4225a5476dbe.jpg)
-
+7. 
 ![183279458-46a55057-45c6-4217-80ec-7afb40e203dc-compressed](https://user-images.githubusercontent.com/106213982/183292998-8da11744-ce63-4abd-857d-3874da14281c.jpg)
-
+8. 
 ![183279652-a60d765b-6ffa-4f87-8f28-1e6bf09958f2-compressed](https://user-images.githubusercontent.com/106213982/183293048-419a41c4-b8ad-43a6-a2ba-d3a0e6bdc114.jpg)
-
+9. 
 ![183279844-8e86ece4-d280-4562-9bb9-00f7246dadda (1)-compressed](https://user-images.githubusercontent.com/106213982/183295043-2e109bd0-0584-4136-9773-d1fef51c908f.jpg)
-
+10. 
 ![183279830-7112bda2-f076-44a0-a978-8c77359fb1ea (1)-compressed](https://user-images.githubusercontent.com/106213982/183295064-bf479161-b5bb-4b2a-8482-7071a64764ec.jpg)
-
+11. 
 ![183280184-312a01a1-7951-4d74-8f82-f7976009d197 (2)-compressed](https://user-images.githubusercontent.com/106213982/183295089-bbbb67bd-0a66-49fc-82e7-cc500c117121.jpg)
-
-![image](https://user-images.githubusercontent.com/106213982/183280194-98143866-9513-4cdb-8964-88296430c93f.png)
-
-![image](https://user-images.githubusercontent.com/106213982/183280207-1ec8ec39-1469-43f0-a0fd-37541ed1df14.png)
-
-![image](https://user-images.githubusercontent.com/106213982/183280214-f1aa568f-75fa-4466-a2d2-0fe821cc4464.png)
-
-![image](https://user-images.githubusercontent.com/106213982/183280304-43793c7d-9bd8-46fc-b1fe-40a9ab7e9e19.png)
+12. 
+![183280194-98143866-9513-4cdb-8964-88296430c93f (2)-compressed](https://user-images.githubusercontent.com/106213982/183295379-0e2f838e-fb8f-43e7-bd34-e6a278c58e29.jpg)
+13. 
+![183280207-1ec8ec39-1469-43f0-a0fd-37541ed1df14-compressed](https://user-images.githubusercontent.com/106213982/183295439-de6db5b0-4e0c-4835-99b2-028bbf7dabbf.jpg)
+14. 
+![183280214-f1aa568f-75fa-4466-a2d2-0fe821cc4464 (1)-compressed](https://user-images.githubusercontent.com/106213982/183295642-2293cc62-5533-4c0b-875c-18bcea750caa.jpg)
+15. 
+![183280304-43793c7d-9bd8-46fc-b1fe-40a9ab7e9e19-compressed](https://user-images.githubusercontent.com/106213982/183295672-7a8f2c82-80f9-454e-b6e0-77aab76e23aa.jpg)
 
 ## Rclone
-![image](https://user-images.githubusercontent.com/106213982/183281693-699c4da2-2d6f-42a6-8b76-2009c1e273fc.png)
+![183281693-699c4da2-2d6f-42a6-8b76-2009c1e273fc-compressed](https://user-images.githubusercontent.com/106213982/183295723-a1bd8f81-8800-43a4-9070-02ec5adfe5e1.jpg)
 
-![image](https://user-images.githubusercontent.com/106213982/183281699-39a2eb80-5536-4e00-989b-5cf80a6693dc.png)
+![183281699-39a2eb80-5536-4e00-989b-5cf80a6693dc-compressed](https://user-images.githubusercontent.com/106213982/183295752-678adcd3-0c42-4f2f-9633-127ebb6c4486.jpg)
 
-![image](https://user-images.githubusercontent.com/106213982/183281775-99a7cc49-06da-4740-bc06-a39c7a90d0c7.png)
+![183281775-99a7cc49-06da-4740-bc06-a39c7a90d0c7-compressed](https://user-images.githubusercontent.com/106213982/183295785-d3805368-55fd-48d7-b814-3bb813e3d0a1.jpg)
 
-![image](https://user-images.githubusercontent.com/106213982/183281890-7b9d27f2-4f9c-40d7-b0b0-0dca7efe7925.png)
+![183281890-7b9d27f2-4f9c-40d7-b0b0-0dca7efe7925-compressed](https://user-images.githubusercontent.com/106213982/183295804-cf7f568e-8b6b-45f1-8a18-8ba04630f2be.jpg)
 
-![image](https://user-images.githubusercontent.com/106213982/183281900-c5d92688-e05f-4b38-991f-b1504113c88a.png)
+![183281900-c5d92688-e05f-4b38-991f-b1504113c88a-compressed](https://user-images.githubusercontent.com/106213982/183295839-17325fa9-6a4e-4add-9543-2e792ee38c6e.jpg)
 
 ### Rclone設定
 1. 
