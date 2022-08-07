@@ -155,24 +155,29 @@ y/n> n<br>
 ![183283399-d12f2d93-0310-4f03-a8f1-3d69999951f4-compressed](https://user-images.githubusercontent.com/106213982/183296380-5c3215d2-cffa-40fd-b8c2-1ab889a150ba.jpg)
 
 13. 切換執行目錄，貼上之前複製的指令路徑<br>
-輸入指令：cd E:\tool\rclone-v1.59.0-windows-amd64\<br>
+輸入指令：cd E:\tool\rclone-v1.59.0-windows-amd64\
 ![183282780-ba054d70-9526-4c7e-ac1a-42288d5ad507-compressed](https://user-images.githubusercontent.com/106213982/183296412-8db5573a-8ebc-4f7b-8809-0a654d8a3b8b.jpg)
 
 14. 執行rclone.exe指令，並貼上之前儲存在記事本的授權金鑰，authorize "drive" "eyJz-------------------------"<br>
 輸入指令：./rclone.exe authorize "drive" "eyJz-------------------------"<br>
 ![183282796-ee4723a1-ceee-4481-95fa-fc346acba208-compressed](https://user-images.githubusercontent.com/106213982/183296469-93133af8-f830-46c2-948b-71341b18049b.jpg)
 
-15. 接著，瀏覽器會自動開啟，讓你進行Google Drive登入。<br>
-這邊注意，登入的帳號就是你要授權Rclone存取的Google Drive的帳號，這邊gd01是設定來源的Google Drive，所以就要登入來源的Google Drive。<>
+15. 接著，瀏覽器會自動開啟，讓你進行Google Drive登入。
+這邊注意，登入的帳號就是你要授權Rclone存取的Google Drive的帳號，這邊gd01是設定來源的Google Drive，所以就要登入來源的Google Drive。如果你要設定目的地的Google Drive，e.g. gd02，就要記得登入目的地的Google Drive。
 ![183282804-af6f9e7a-6034-4d5d-8798-f43f4fabe8e7-compressed](https://user-images.githubusercontent.com/106213982/183296506-ef9d6eb6-8569-451e-ab64-3093d766dd5b.jpg)
-16. 
+
+16. 接著，按"允許"，完成授權。
 ![183282831-aa86f83c-1bf8-4f69-9777-c5fb161bbea9-compressed](https://user-images.githubusercontent.com/106213982/183296535-90fa25d8-1203-4d3e-8d4a-7f3a41c4def5.jpg)
-17. 
+
+17. 網頁出現Success，顯示授權完成。
 ![183282836-dcd5e51c-fd09-45dd-9950-84278558ea61-compressed](https://user-images.githubusercontent.com/106213982/183296563-9c1d8427-c4a9-41c5-87e3-6101fa0dcd08.jpg)
-18. 
+
+18. 接著，回到PowerShell，紅框處產生的一連串英文，也就是我們在VM上的Rclone設定，所需要的config_token。我們將這串文字複製起來，貼到VM上。
 ![183282872-429ebd91-2197-4152-a702-3088a5792b64-compressed](https://user-images.githubusercontent.com/106213982/183296588-5b7c6bc1-96df-4948-87c1-931cb76b2b63.jpg)
-19. 
+
+19. 將字串貼到config_token>輸入處，按Enter<br>
 ![183282924-861a29b1-28ed-4fb9-af6a-74682891d432-compressed](https://user-images.githubusercontent.com/106213982/183296616-5ee6b632-dfbc-4b01-88d1-62c803e8e07e.jpg)
+
 20. 
 ![183282961-f945e299-ebf0-4199-a399-66046f03abd3-compressed](https://user-images.githubusercontent.com/106213982/183296663-fb9a0f2f-d9f0-4a65-ae42-3480b7dfbd20.jpg)
 21. 
