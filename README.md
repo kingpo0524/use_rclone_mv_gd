@@ -33,25 +33,43 @@ GCP(Google Cloud Platform)為Google提供的雲端平台。在GCP申請一台雲
 稅務資訊 -> 未登記稅籍的個人<br>
 填好必要的資料後按下 [開始免費試用]<br>
 ![183279319-3c89fba8-7042-45ea-9ea9-301de7189117-compressed](https://user-images.githubusercontent.com/106213982/183292912-c0c66c0a-7f77-426e-baf8-ff62c53c98a4.jpg)
-6. 
+6. 回答問題，可隨意填寫
 ![183279412-11cecf6e-8d31-4156-bc31-84a38f632988-compressed](https://user-images.githubusercontent.com/106213982/183292926-f75ee9ee-6b00-4077-a7d7-4225a5476dbe.jpg)
-7. 
+7. 直接按"暫時略過"
 ![183279458-46a55057-45c6-4217-80ec-7afb40e203dc-compressed](https://user-images.githubusercontent.com/106213982/183292998-8da11744-ce63-4abd-857d-3874da14281c.jpg)
-8. 
+8. Compute Engine -> VM執行個體
 ![183279652-a60d765b-6ffa-4f87-8f28-1e6bf09958f2-compressed](https://user-images.githubusercontent.com/106213982/183293048-419a41c4-b8ad-43a6-a2ba-d3a0e6bdc114.jpg)
-9. 
+9. 啟用
 ![183279844-8e86ece4-d280-4562-9bb9-00f7246dadda (1)-compressed](https://user-images.githubusercontent.com/106213982/183295043-2e109bd0-0584-4136-9773-d1fef51c908f.jpg)
-10. 
+10. 建立執行個體
 ![183279830-7112bda2-f076-44a0-a978-8c77359fb1ea (1)-compressed](https://user-images.githubusercontent.com/106213982/183295064-bf479161-b5bb-4b2a-8482-7071a64764ec.jpg)
-11. 
+11. <br>
+名稱：自訂<br>
+區域：us-central1 ， us-central1-a<br>
+機器設定 -> 機器系列 -> 一般用途<br>
+系列：N1<br>
+機器類型：f1-micro<br>
 ![183280184-312a01a1-7951-4d74-8f82-f7976009d197 (2)-compressed](https://user-images.githubusercontent.com/106213982/183295089-bbbb67bd-0a66-49fc-82e7-cc500c117121.jpg)
-12. 
+12. <br>
+開機磁碟 -> [變更]<br>
 ![183280194-98143866-9513-4cdb-8964-88296430c93f (2)-compressed](https://user-images.githubusercontent.com/106213982/183295379-0e2f838e-fb8f-43e7-bd34-e6a278c58e29.jpg)
-13. 
+13. <br> 
+開機磁碟：公開映像檔<br>
+作業系統：CentOS<br>
+版本：CentOS 7<br>
+開機磁碟類型：標準永久磁碟<br>
+大小(GB)：30<br>
 ![183280207-1ec8ec39-1469-43f0-a0fd-37541ed1df14-compressed](https://user-images.githubusercontent.com/106213982/183295439-de6db5b0-4e0c-4835-99b2-028bbf7dabbf.jpg)
-14. 
+14. <br>
+安全性 -> 受防護的 VM<br>
+啟用 vTPM -> 取消勾選<br>
+啟用完整性監控功能 -> 取消勾選<br>
+右邊可以看到預估每月花費，但是因為我們在試用期，並且是Google Driver對傳，如果沒有手動啟用升級，是不會被收費的。<br>
+點擊"建立"
 ![183280214-f1aa568f-75fa-4466-a2d2-0fe821cc4464 (1)-compressed](https://user-images.githubusercontent.com/106213982/183295642-2293cc62-5533-4c0b-875c-18bcea750caa.jpg)
-15. 
+15. <br>
+選擇"在瀏覽器視窗中開啟"<br>
+到這裡，我們完成在GCP上建立虛擬機器VM，並且設定VM執行的作業系統為Linux CentOS7，透過瀏覽器視窗可以開啟連接VM的指令介面終端機。接著，我們可以開始操作VM，安裝Rclone等相關工具。然後就可以使用Rclone開始搬移Google Driver的資料。
 ![183280304-43793c7d-9bd8-46fc-b1fe-40a9ab7e9e19-compressed](https://user-images.githubusercontent.com/106213982/183295672-7a8f2c82-80f9-454e-b6e0-77aab76e23aa.jpg)
 
 ## Rclone
