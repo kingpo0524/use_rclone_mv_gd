@@ -16,25 +16,25 @@ GCP(Google Cloud Platform)為Google提供的雲端平台。在GCP申請一台雲
 * 準備信用卡，註冊時需輸入信用卡資訊，此為google的驗證機制，不會實際收費。google目前提供300美元抵用金額(約台幣9000)，可以在90天內試用Google Cloud產品。即使超過試用期也不會直接收費，除非手動升級至付費帳戶。這部分可以再申請頁面看到相關說明。
 * 如果是透過VM將某一個帳號下的Google Driver資料傳輸到另一個Google Driver帳號，應該是不收費的。<br>
 參考連結:https://cloud.google.com/vpc/network-pricing?hl=zh-tw
-![image](https://user-images.githubusercontent.com/106213982/183279257-57b10103-6fcd-4110-b0e9-c340cdafc672.png)
+![183279257-57b10103-6fcd-4110-b0e9-c340cdafc672-compressed](https://user-images.githubusercontent.com/106213982/183292546-3ef47166-9eda-4fcb-8348-adf96fc76de1.jpg)
 * 本文使用 rclone 版本為 v1.59.0
 
 ## 一. 申請Google Cloud Platform (gcp)
 1. 申請網址: https://cloud.google.com/free?hl=zh-tw<br>
 直接點集"免費試用"，這邊可以看到新客戶可以有300美元抵免額。
-![image](https://user-images.githubusercontent.com/106213982/183279285-7058ceb4-8348-44b6-b916-cbf1f4a62895.png)
+![183279285-7058ceb4-8348-44b6-b916-cbf1f4a62895-compressed](https://user-images.githubusercontent.com/106213982/183292618-20b5b00f-3a09-43c5-b3da-d364f1896d40.jpg)
 2. 接著直接登入，可以使用現有帳號，或是建立新帳號。
 3. "機構或需求"依個人情況隨意填寫，服務條款全部勾選，直接按"繼續"。重要的是旁邊的說明"免費試用期結束後不會自動向您收費"。
-![image](https://user-images.githubusercontent.com/106213982/183279314-ac73d936-1cfc-472c-a515-e6f2873c28b5.png)
+![183279314-ac73d936-1cfc-472c-a515-e6f2873c28b5-compressed (4)](https://user-images.githubusercontent.com/106213982/183292846-51adb4cf-a101-43fe-8142-b1e57bb7a094.jpg)
 4. 接著進行手機驗證。
-![image](https://user-images.githubusercontent.com/106213982/183279316-d7e1d8a7-f58f-4f17-9893-6c648efbd520.png)
+![183279316-d7e1d8a7-f58f-4f17-9893-6c648efbd520-compressed](https://user-images.githubusercontent.com/106213982/183292886-1e1a90fd-d75b-4257-ac8c-df2c094c1e29.jpg)
 5. 接著驗證付款資訊<br>
 帳戶類型 -> 個人<br>
 稅務資訊 -> 未登記稅籍的個人<br>
 填好必要的資料後按下 [開始免費試用]<br>
-![image](https://user-images.githubusercontent.com/106213982/183279319-3c89fba8-7042-45ea-9ea9-301de7189117.png)
+![183279319-3c89fba8-7042-45ea-9ea9-301de7189117-compressed](https://user-images.githubusercontent.com/106213982/183292912-c0c66c0a-7f77-426e-baf8-ff62c53c98a4.jpg)
 6. 
-![image](https://user-images.githubusercontent.com/106213982/183279412-11cecf6e-8d31-4156-bc31-84a38f632988.png)
+![183279412-11cecf6e-8d31-4156-bc31-84a38f632988-compressed](https://user-images.githubusercontent.com/106213982/183292926-f75ee9ee-6b00-4077-a7d7-4225a5476dbe.jpg)
 
 ![image](https://user-images.githubusercontent.com/106213982/183279458-46a55057-45c6-4217-80ec-7afb40e203dc.png)
 
