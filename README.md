@@ -40,11 +40,11 @@ GCP(Google Cloud Platform)為Google提供的雲端平台。在GCP申請一台雲
 
 ![183279652-a60d765b-6ffa-4f87-8f28-1e6bf09958f2-compressed](https://user-images.githubusercontent.com/106213982/183293048-419a41c4-b8ad-43a6-a2ba-d3a0e6bdc114.jpg)
 
-![image](https://user-images.githubusercontent.com/106213982/183279844-8e86ece4-d280-4562-9bb9-00f7246dadda.png)
+![183279844-8e86ece4-d280-4562-9bb9-00f7246dadda (1)-compressed](https://user-images.githubusercontent.com/106213982/183295043-2e109bd0-0584-4136-9773-d1fef51c908f.jpg)
 
-![image](https://user-images.githubusercontent.com/106213982/183279830-7112bda2-f076-44a0-a978-8c77359fb1ea.png)
+![183279830-7112bda2-f076-44a0-a978-8c77359fb1ea (1)-compressed](https://user-images.githubusercontent.com/106213982/183295064-bf479161-b5bb-4b2a-8482-7071a64764ec.jpg)
 
-![image](https://user-images.githubusercontent.com/106213982/183280184-312a01a1-7951-4d74-8f82-f7976009d197.png)
+![183280184-312a01a1-7951-4d74-8f82-f7976009d197 (2)-compressed](https://user-images.githubusercontent.com/106213982/183295089-bbbb67bd-0a66-49fc-82e7-cc500c117121.jpg)
 
 ![image](https://user-images.githubusercontent.com/106213982/183280194-98143866-9513-4cdb-8964-88296430c93f.png)
 
