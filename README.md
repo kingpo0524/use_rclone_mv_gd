@@ -36,9 +36,9 @@ GCP(Google Cloud Platform)為Google提供的雲端平台。在GCP申請一台雲
 6. 
 ![183279412-11cecf6e-8d31-4156-bc31-84a38f632988-compressed](https://user-images.githubusercontent.com/106213982/183292926-f75ee9ee-6b00-4077-a7d7-4225a5476dbe.jpg)
 
-![image](https://user-images.githubusercontent.com/106213982/183279458-46a55057-45c6-4217-80ec-7afb40e203dc.png)
+![183279458-46a55057-45c6-4217-80ec-7afb40e203dc-compressed](https://user-images.githubusercontent.com/106213982/183292998-8da11744-ce63-4abd-857d-3874da14281c.jpg)
 
-![image](https://user-images.githubusercontent.com/106213982/183279652-a60d765b-6ffa-4f87-8f28-1e6bf09958f2.png)
+![183279652-a60d765b-6ffa-4f87-8f28-1e6bf09958f2-compressed](https://user-images.githubusercontent.com/106213982/183293048-419a41c4-b8ad-43a6-a2ba-d3a0e6bdc114.jpg)
 
 ![image](https://user-images.githubusercontent.com/106213982/183279844-8e86ece4-d280-4562-9bb9-00f7246dadda.png)
 
