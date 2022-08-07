@@ -116,7 +116,7 @@ Storage> 18<br>
 5. client_secret輸入預設值，保留空白直接按Enter。同上，如果在意效能可以參考連結自行設定。<br>
 ![183282631-36cf3c3a-a190-4c7e-9e19-2345219c30d6-compressed](https://user-images.githubusercontent.com/106213982/183296058-99f825a3-5914-42dd-b35f-3f037e47d300.jpg)
 
-6. 選擇權限。
+6. 選擇權限。<br>
 如果設定的是來源Google Drive，建議選2，Read-only，這樣可以避免誤刪檔案。<br>
 如果設定的是目的地Google Drive，建議選1，Full access，這樣可以確保寫入的權限。<br>
 ![183282646-e6db7727-8778-40fe-9890-d7aa4456a3b4-compressed](https://user-images.githubusercontent.com/106213982/183296089-28c6ae75-169a-4c9d-bffa-af624fd05e73.jpg)
@@ -126,21 +126,21 @@ Storage> 18<br>
 
 8. 設定進階選項，輸入n<br>
 
-Edit advanced config? (y/n)
-y) Yes
-n) No (default)
-y/n>n
+Edit advanced config? (y/n)<br>
+y) Yes<br>
+n) No (default)<br>
+y/n>n<br>
 
 ![183282672-117d0f41-6cca-409c-b537-ca33bb432d82-compressed](https://user-images.githubusercontent.com/106213982/183296248-a12da879-32a6-4523-9ef4-bd950e8dde36.jpg)
 
-9. auto config 這邊選n，手動設定。
+9. auto config 這邊選n，手動設定。<br>
 
-Use auto config?
-* Say Y if not sure
-* Say N if you are working on a remote or headless machine
-y) Yes (default)
-n) No
-y/n> n
+Use auto config?<br>
+* Say Y if not sure<br>
+* Say N if you are working on a remote or headless machine<br>
+y) Yes (default)<br>
+n) No<br>
+y/n> n<br>
 
 ![183282695-b25cbcff-7ace-4027-be44-53b157448e98-compressed](https://user-images.githubusercontent.com/106213982/183296278-03126f96-4166-4a03-a0da-1ddd8ee6b264.jpg)
 
