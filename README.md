@@ -133,7 +133,7 @@ y/n>n<br>
 
 ![183282672-117d0f41-6cca-409c-b537-ca33bb432d82-compressed](https://user-images.githubusercontent.com/106213982/183296248-a12da879-32a6-4523-9ef4-bd950e8dde36.jpg)
 
-9. auto config 這邊選n，手動設定。<br>
+9. auto config 這邊選n，手動設定。這裡開始，也是我之前稍微卡關的地方，因此會寫詳細一點。<br>
 
 Use auto config?<br>
 * Say Y if not sure<br>
@@ -144,17 +144,26 @@ y/n> n<br>
 
 ![183282695-b25cbcff-7ace-4027-be44-53b157448e98-compressed](https://user-images.githubusercontent.com/106213982/183296278-03126f96-4166-4a03-a0da-1ddd8ee6b264.jpg)
 
-10. 
+10. 要求我們輸入 config_token>，我們需透過另一台電腦取得token，這點後續說明<br>
+首先我們複製紅框框住的文字 authorize "drive" "eyJz-------------------------"，找一個記事本存下來<br>
 ![183282740-0ea65c45-ef1d-4874-a8fb-2cadd51029ee-compressed](https://user-images.githubusercontent.com/106213982/183296319-fbdc3a5e-4627-495a-ba8c-9c1eef3e3d00.jpg)
-11. 
+
+11. 因為我們是透過雲端平台建立的VM，無法開啟瀏覽器，因此要讓Rclone可以取得Google Drive的授權，我們需要另外找一台可以開啟瀏覽器的電腦，可以是你的本機Windows作業系統，也可以是任何Linux作業系統。我們這邊將以Windows的操作為例。到Rclone官網(https://rclone.org/downloads/)下載安裝檔，這邊選擇Window 64bits安裝檔。解壓縮後直接是可以執行的指令，不需要安裝，將目錄放在你想放置的位置。如下圖，透過瀏覽列，複製指令的路徑。
 ![183282762-1a4cab0f-47a9-4324-89e1-176e3acfc24f-compressed](https://user-images.githubusercontent.com/106213982/183296344-457ab632-8c68-49d4-a8bc-dcbf5d1b2603.jpg)
-12. 
+
+12. 接著於作業系統左下角搜尋"PowerShell"，開啟Windows PowerShell<br>
 ![183283399-d12f2d93-0310-4f03-a8f1-3d69999951f4-compressed](https://user-images.githubusercontent.com/106213982/183296380-5c3215d2-cffa-40fd-b8c2-1ab889a150ba.jpg)
-13. 
+
+13. 切換執行目錄，貼上之前複製的指令路徑<br>
+輸入指令：cd E:\tool\rclone-v1.59.0-windows-amd64\<br>
 ![183282780-ba054d70-9526-4c7e-ac1a-42288d5ad507-compressed](https://user-images.githubusercontent.com/106213982/183296412-8db5573a-8ebc-4f7b-8809-0a654d8a3b8b.jpg)
-14. 
+
+14. 執行rclone.exe指令，並貼上之前儲存在記事本的授權金鑰，authorize "drive" "eyJz-------------------------"<br>
+輸入指令：./rclone.exe authorize "drive" "eyJz-------------------------"<br>
 ![183282796-ee4723a1-ceee-4481-95fa-fc346acba208-compressed](https://user-images.githubusercontent.com/106213982/183296469-93133af8-f830-46c2-948b-71341b18049b.jpg)
-15.
+
+15. 接著，瀏覽器會自動開啟，讓你進行Google Drive登入。<br>
+這邊注意，登入的帳號就是你要授權Rclone存取的Google Drive的帳號，這邊gd01是設定來源的Google Drive，所以就要登入來源的Google Drive。<>
 ![183282804-af6f9e7a-6034-4d5d-8798-f43f4fabe8e7-compressed](https://user-images.githubusercontent.com/106213982/183296506-ef9d6eb6-8569-451e-ab64-3093d766dd5b.jpg)
 16. 
 ![183282831-aa86f83c-1bf8-4f69-9777-c5fb161bbea9-compressed](https://user-images.githubusercontent.com/106213982/183296535-90fa25d8-1203-4d3e-8d4a-7f3a41c4def5.jpg)
