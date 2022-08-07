@@ -89,25 +89,61 @@ GCP(Google Cloud Platform)為Google提供的雲端平台。在GCP申請一台雲
 輸入指令：rclone version
 ![183281900-c5d92688-e05f-4b38-991f-b1504113c88a-compressed](https://user-images.githubusercontent.com/106213982/183295839-17325fa9-6a4e-4add-9543-2e792ee38c6e.jpg)
 
-### Rclone設定
-1. 
+## 三. Rclone設定
+1. 啟動Rclone設定<br>
+輸入指令：rclone config<br>
+
+n) New remote<br>
+我們輸入 n，建立新的遠端設定<br>
+n/s/q> n<br>
+
 ![183283192-18591747-a4a8-4641-a4b8-ffa8ebf38a3e-compressed](https://user-images.githubusercontent.com/106213982/183295936-021415b9-7e25-423a-bf6e-4827a6e830ab.jpg)
-2. 
+2. 輸入自訂名稱<br>
+  
+name> gd01<br>
+
 ![183282567-6133ad7e-fb4b-4eaf-8ab9-3a0cfbfac23b-compressed](https://user-images.githubusercontent.com/106213982/183295965-1b2219c1-0c54-4562-9a1d-04465d7bfefe.jpg)
-3. 
+3. Rclone v1.59 會列出49個選項，Google Drive在第18個選項，所以輸入18。<br>
+
+Storage> 18<br>
+
 ![183282586-5b6046cb-47d8-4c80-80e8-6027d6488eb7-compressed](https://user-images.githubusercontent.com/106213982/183296000-8ea0731b-2e4e-4e9f-9fc9-06f5d3b90339.jpg)
-4. 
+
+4.  client_id輸入預設值，保留空白直接按Enter。使用預設值，會使用內部提供的key，效能會比較差，如果在意的話，可以設定自己的clinet_id。<br>
+參考連結:https://rclone.org/drive/#making-your-own-client-id
 ![183283302-8376ef12-d7d5-4721-a0a7-66ddfe204476-compressed](https://user-images.githubusercontent.com/106213982/183296031-98fcaf8f-f4e0-4ab8-97ab-b3d507d0cae9.jpg)
-5. 
+
+5. client_secret輸入預設值，保留空白直接按Enter。同上，如果在意效能可以參考連結自行設定。<br>
 ![183282631-36cf3c3a-a190-4c7e-9e19-2345219c30d6-compressed](https://user-images.githubusercontent.com/106213982/183296058-99f825a3-5914-42dd-b35f-3f037e47d300.jpg)
-6. 
+
+6. 選擇權限。
+如果設定的是來源Google Drive，建議選2，Read-only，這樣可以避免誤刪檔案。<br>
+如果設定的是目的地Google Drive，建議選1，Full access，這樣可以確保寫入的權限。<br>
 ![183282646-e6db7727-8778-40fe-9890-d7aa4456a3b4-compressed](https://user-images.githubusercontent.com/106213982/183296089-28c6ae75-169a-4c9d-bffa-af624fd05e73.jpg)
-7. 
+
+7. service_account_file輸入預設值，保留空白直接按Enter。
 ![183282658-777762bc-91cb-4660-8105-d7d71ce5b356-compressed](https://user-images.githubusercontent.com/106213982/183296133-d1d92436-1a69-4ded-a95c-d9ab99e07b08.jpg)
-8. 
+
+8. 設定進階選項，輸入n<br>
+
+Edit advanced config? (y/n)
+y) Yes
+n) No (default)
+y/n>n
+
 ![183282672-117d0f41-6cca-409c-b537-ca33bb432d82-compressed](https://user-images.githubusercontent.com/106213982/183296248-a12da879-32a6-4523-9ef4-bd950e8dde36.jpg)
-9. 
+
+9. auto config 這邊選n，手動設定。
+
+Use auto config?
+* Say Y if not sure
+* Say N if you are working on a remote or headless machine
+y) Yes (default)
+n) No
+y/n> n
+
 ![183282695-b25cbcff-7ace-4027-be44-53b157448e98-compressed](https://user-images.githubusercontent.com/106213982/183296278-03126f96-4166-4a03-a0da-1ddd8ee6b264.jpg)
+
 10. 
 ![183282740-0ea65c45-ef1d-4874-a8fb-2cadd51029ee-compressed](https://user-images.githubusercontent.com/106213982/183296319-fbdc3a5e-4627-495a-ba8c-9c1eef3e3d00.jpg)
 11. 
