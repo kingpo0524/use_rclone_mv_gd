@@ -189,7 +189,9 @@ y/e/d> y
 22. 接著，在畫面上可以看到gd01已經設定完成。
 ![183283023-91af3164-07d7-4a26-8747-22d5a045a418-compressed](https://user-images.githubusercontent.com/106213982/183296708-f52fb8ea-bd55-4c0f-af6b-e586d717d8a5.jpg)
 
-23. 以上，我們完成的其中一個來源遠端硬碟gd01設定，依同樣方式，我們建立目的端的遠端硬碟gd02。建立gd02需要留意的是第6點，選擇權限的地方要選擇1，Full access，確保寫入權限，以及第15點，Rclone授權需登入的是目的地端Google Drive帳號。
+23. 以上，我們完成的其中一個來源遠端硬碟gd01設定，依同樣方式，我們建立目的端的遠端硬碟gd02。建立gd02需要留意的是第6點，選擇權限的地方要選擇1，Full access，確保寫入權限，以及第15點，Rclone授權需登入的是目的地端Google Drive帳號。完成以後，如下圖。
+![2022-8-8 上午 09-20-41 (2)](https://user-images.githubusercontent.com/106213982/183321343-5ca2ca35-22f0-4c38-8459-f021719f864f.png)
+
 
 
 
