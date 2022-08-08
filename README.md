@@ -143,8 +143,8 @@ y/n> n<br>
 
 ![183282695-b25cbcff-7ace-4027-be44-53b157448e98-compressed](https://user-images.githubusercontent.com/106213982/183296278-03126f96-4166-4a03-a0da-1ddd8ee6b264.jpg)
 
-10. 畫面要求我們輸入 config_token>，我們需透過另一台電腦取得token，這點後續說明<br>
-首先我們複製紅框框住的文字 authorize "drive" "eyJz-------------------------"，找一個記事本存下來。<br>
+10. 畫面要求我們輸入 config_token>，我們需透過另一台電腦取得token，這點後續說明。首先我們複製紅框框住的文字，找一個記事本存下來。<br>
+    authorize "drive" "eyJz-------------------------"<br>
 ![183282740-0ea65c45-ef1d-4874-a8fb-2cadd51029ee-compressed](https://user-images.githubusercontent.com/106213982/183296319-fbdc3a5e-4627-495a-ba8c-9c1eef3e3d00.jpg)
 
 11. 因為我們是透過雲端平台建立的VM，無法開啟瀏覽器，因此要讓Rclone可以取得Google Drive的授權，我們需要另外找一台可以開啟瀏覽器的電腦，可以是你的本機Windows作業系統，也可以是任何Linux作業系統。我們這邊將以Windows的操作為例。到Rclone官網(https://rclone.org/downloads/) 下載安裝檔，這邊選擇Window 64 Bit安裝檔。解壓縮後直接是可以執行的指令，不需要安裝，將目錄放在你想放置的位置。如下圖，透過瀏覽列，複製指令的路徑。
