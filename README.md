@@ -147,7 +147,7 @@ y/n> n<br>
 首先我們複製紅框框住的文字 authorize "drive" "eyJz-------------------------"，找一個記事本存下來。<br>
 ![183282740-0ea65c45-ef1d-4874-a8fb-2cadd51029ee-compressed](https://user-images.githubusercontent.com/106213982/183296319-fbdc3a5e-4627-495a-ba8c-9c1eef3e3d00.jpg)
 
-11. 因為我們是透過雲端平台建立的VM，無法開啟瀏覽器，因此要讓Rclone可以取得Google Drive的授權，我們需要另外找一台可以開啟瀏覽器的電腦，可以是你的本機Windows作業系統，也可以是任何Linux作業系統。我們這邊將以Windows的操作為例。到Rclone官網(https://rclone.org/downloads/) 下載安裝檔，這邊選擇Window 64bits安裝檔。解壓縮後直接是可以執行的指令，不需要安裝，將目錄放在你想放置的位置。如下圖，透過瀏覽列，複製指令的路徑。
+11. 因為我們是透過雲端平台建立的VM，無法開啟瀏覽器，因此要讓Rclone可以取得Google Drive的授權，我們需要另外找一台可以開啟瀏覽器的電腦，可以是你的本機Windows作業系統，也可以是任何Linux作業系統。我們這邊將以Windows的操作為例。到Rclone官網(https://rclone.org/downloads/) 下載安裝檔，這邊選擇Window 64 Bit安裝檔。解壓縮後直接是可以執行的指令，不需要安裝，將目錄放在你想放置的位置。如下圖，透過瀏覽列，複製指令的路徑。
 ![183282762-1a4cab0f-47a9-4324-89e1-176e3acfc24f-compressed](https://user-images.githubusercontent.com/106213982/183296344-457ab632-8c68-49d4-a8bc-dcbf5d1b2603.jpg)
 
 12. 接著於作業系統左下角搜尋"PowerShell"，開啟Windows PowerShell<br>
@@ -157,7 +157,8 @@ y/n> n<br>
 輸入指令：cd E:\tool\rclone-v1.59.0-windows-amd64\
 ![183282780-ba054d70-9526-4c7e-ac1a-42288d5ad507-compressed](https://user-images.githubusercontent.com/106213982/183296412-8db5573a-8ebc-4f7b-8809-0a654d8a3b8b.jpg)
 
-14. 執行rclone.exe指令，並貼上之前儲存在記事本的授權金鑰，authorize "drive" "eyJz-------------------------"<br>
+14. 執行rclone.exe指令，並貼上之前儲存在記事本的授權金鑰。<br>
+authorize "drive" "eyJz-------------------------"<br>
 輸入指令：./rclone.exe authorize "drive" "eyJz-------------------------"<br>
 ![183282796-ee4723a1-ceee-4481-95fa-fc346acba208-compressed](https://user-images.githubusercontent.com/106213982/183296469-93133af8-f830-46c2-948b-71341b18049b.jpg)
 
