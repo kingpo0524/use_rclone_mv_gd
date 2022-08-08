@@ -178,12 +178,18 @@ y/n> n<br>
 19. 將字串貼到config_token>輸入處，按Enter<br>
 ![183282924-861a29b1-28ed-4fb9-af6a-74682891d432-compressed](https://user-images.githubusercontent.com/106213982/183296616-5ee6b632-dfbc-4b01-88d1-62c803e8e07e.jpg)
 
-20. 
+20. 接下來詢問是否設定 Team Drive(小組雲端硬碟)，我沒有使用，所以不設定，有需要可以參考原文。<br>
+y/n> n
 ![183282961-f945e299-ebf0-4199-a399-66046f03abd3-compressed](https://user-images.githubusercontent.com/106213982/183296663-fb9a0f2f-d9f0-4a65-ae42-3480b7dfbd20.jpg)
-21. 
+
+21. 最後，確認設定訊息，都沒問題，選y，完成設定<br>
+y/e/d> y
 ![183282994-6c928d5d-9ecf-42a8-917d-985a461e7ccc-compressed](https://user-images.githubusercontent.com/106213982/183296688-44cb79ac-b813-448f-b1cf-12777ef177be.jpg)
-22. 
+
+22. 接著，在畫面上可以看到gd01已經設定完成。
 ![183283023-91af3164-07d7-4a26-8747-22d5a045a418-compressed](https://user-images.githubusercontent.com/106213982/183296708-f52fb8ea-bd55-4c0f-af6b-e586d717d8a5.jpg)
+
+23. 以上，我們完成的其中一個來源遠端硬碟gd01設定，依同樣方式，我們建立目的端的遠端硬碟gd02。建立gd02需要留意的是第6點，選擇權限的地方要選擇1，Full access，確保寫入權限，以及第15點，Rclone授權需登入的是目的地端Google Drive帳號。
 
 
 
