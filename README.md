@@ -220,6 +220,10 @@ y/e/d> y
    rclone -vv copy gd01:Music/"我愛聽的歌 第一集" gd02:Music/"我愛聽的歌 第一集"
 7. 如果想設定Team Drive(小組雲端硬碟)，可以參考原文。基本上就是在設定Rclone第20點，選擇y，即可建立Team Drive遠端設定。
 
+8. 資料複製完畢，可以關閉或刪除在GCP建立的VM
+![image](https://user-images.githubusercontent.com/106213982/183371584-71058f47-a4ba-4a08-a6cd-26e5bf1f27b7.png)
+
+
 
 
 
