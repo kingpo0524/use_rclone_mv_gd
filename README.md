@@ -194,13 +194,19 @@ y/e/d> y
 
 ## 四. Rclone資料搬移教學
 1. 在開始透過Rclone搬移資料前，我們先透過screen開啟多重視窗，輸入以下指令可以建立一個視窗，方便我們斷線後還可以連回來。輸入以下指令，會直接建立gd01togd02視窗，並自動連入<br>
-輸入指令：screen -S gd01togd02
+輸入指令：screen -S gd01togd02<br>
 
 ![2022-8-8 上午 09-46-03](https://user-images.githubusercontent.com/106213982/183323402-ab68a164-8a46-422d-b200-240aba4ec2d5.png)
 
-2.
+2. 進到gd01togd02視窗後，我們先測試gd01及gd02設定是否正確，看看能否連的上。以下兩個指令可以分別列出gd01及gd02的目錄，如果成功列出，就是設定正確。<br>
+輸入指令1：rclone lsd gd01:/<br>
+輸入指令2：rclone lsd gd02:/<br>
 ![2022-8-8 上午 09-51-08](https://user-images.githubusercontent.com/106213982/183323416-e212d648-09d9-4d73-a01a-15d7948924e7.png)
-3.
+
+3. 接著我們可以開始進行資料搬移，因為本次的目的是要把gd01所有資料全部搬到gd02，因此在gd01及gd02的路徑都設定成"/"，這樣會把gd01完整目錄結構複製到gd02。後續會在說明針對特定目錄複製的相關指令。<br>
+輸入指令：rclone -vv copy --drive-server-side-across-configs gd01:/ gd02:/<br>
+參數說明：-vv 印出詳細執行過程，透過執行過程可以確認傳輸進度。<br>
+參數說明：--drive-server-side-across-configs 在 Server 端傳輸檔案，不會使用到 Client 流量。<br>
 ![2022-8-8 上午 09-55-00](https://user-images.githubusercontent.com/106213982/183323421-ede2ae66-8e5d-4d91-bc4a-6b2e50496eb9.png)
 
 
