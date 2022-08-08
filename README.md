@@ -193,15 +193,22 @@ y/e/d> y
 ![2022-8-8 上午 09-20-41 (2)](https://user-images.githubusercontent.com/106213982/183321343-5ca2ca35-22f0-4c38-8459-f021719f864f.png)
 
 ## 四. Rclone資料搬移教學
-1. 在開始透過Rclone搬移資料前，我們先透過screen開啟多重視窗
+1. 在開始透過Rclone搬移資料前，我們先透過screen開啟多重視窗，輸入以下指令可以建立一個視窗，方便我們斷線後還可以連回來。輸入以下指令，會直接建立gd01togd02視窗，並自動連入<br>
+輸入指令：screen -S gd01togd02
 
 ![2022-8-8 上午 09-46-03](https://user-images.githubusercontent.com/106213982/183323402-ab68a164-8a46-422d-b200-240aba4ec2d5.png)
+
 2.
-![2022-8-8 上午 09-47-50](https://user-images.githubusercontent.com/106213982/183323409-f9ed6285-568d-44c6-b997-d10689650800.png)
-3
 ![2022-8-8 上午 09-51-08](https://user-images.githubusercontent.com/106213982/183323416-e212d648-09d9-4d73-a01a-15d7948924e7.png)
-4.
+3.
 ![2022-8-8 上午 09-55-00](https://user-images.githubusercontent.com/106213982/183323421-ede2ae66-8e5d-4d91-bc4a-6b2e50496eb9.png)
+
+
+
+2.輸入指令１，可以列出目前存在的視窗，下次連回來如果忘記名稱，可以透過此指令查詢。輸入指令２可以連回gd01togd02視窗。當我們關閉終端機視窗，下一次透過GCP->控制台->Comuute Engine，重新進入VM時，就可以透過指令2，連回之前開啟的視窗查詢結果。
+輸入指令1：screen -ls
+輸入指令2：screen -x gd01togd02
+![2022-8-8 上午 10-01-38](https://user-images.githubusercontent.com/106213982/183323924-a833a193-af09-47d8-b3a4-3310c06c7c64.png)
 
 
 
