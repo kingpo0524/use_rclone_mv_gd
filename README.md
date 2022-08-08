@@ -153,7 +153,7 @@ y/n> n<br>
 12. 接著於作業系統左下角搜尋"PowerShell"，開啟Windows PowerShell<br>
 ![183283399-d12f2d93-0310-4f03-a8f1-3d69999951f4-compressed](https://user-images.githubusercontent.com/106213982/183296380-5c3215d2-cffa-40fd-b8c2-1ab889a150ba.jpg)
 
-13. 切換執行目錄，貼上之前複製的指令路徑<br>
+13. 切換執行目錄，貼上之前複製的指令路徑(要改為自己的儲存路徑)。<br>
 輸入指令：cd E:\tool\rclone-v1.59.0-windows-amd64\
 ![183282780-ba054d70-9526-4c7e-ac1a-42288d5ad507-compressed](https://user-images.githubusercontent.com/106213982/183296412-8db5573a-8ebc-4f7b-8809-0a654d8a3b8b.jpg)
 
