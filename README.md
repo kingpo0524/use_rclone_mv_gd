@@ -192,6 +192,17 @@ y/e/d> y
 23. 以上，我們完成的其中一個來源遠端硬碟gd01設定，依同樣方式，我們建立目的端的遠端硬碟gd02。建立gd02需要留意的是第6點，選擇權限的地方要選擇1，Full access，確保寫入權限，以及第15點，Rclone授權需登入的是目的地端Google Drive帳號。完成以後，如下圖。
 ![2022-8-8 上午 09-20-41 (2)](https://user-images.githubusercontent.com/106213982/183321343-5ca2ca35-22f0-4c38-8459-f021719f864f.png)
 
+## 四. Rclone資料搬移教學
+1. 在開始透過Rclone搬移資料前，我們先透過screen開啟多重視窗
+
+![2022-8-8 上午 09-46-03](https://user-images.githubusercontent.com/106213982/183323402-ab68a164-8a46-422d-b200-240aba4ec2d5.png)
+2.
+![2022-8-8 上午 09-47-50](https://user-images.githubusercontent.com/106213982/183323409-f9ed6285-568d-44c6-b997-d10689650800.png)
+3
+![2022-8-8 上午 09-51-08](https://user-images.githubusercontent.com/106213982/183323416-e212d648-09d9-4d73-a01a-15d7948924e7.png)
+4.
+![2022-8-8 上午 09-55-00](https://user-images.githubusercontent.com/106213982/183323421-ede2ae66-8e5d-4d91-bc4a-6b2e50496eb9.png)
+
 
 
 
