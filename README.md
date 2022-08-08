@@ -9,7 +9,7 @@
 感謝文章原作dc提供的方式，解決我教育帳號大量資料搬移的問題。
 
 ## 說明
-GCP(Google Cloud Platform)為Google提供的雲端平台。在GCP申請一台雲端虛擬機器(以下稱VM，Virtual Machine)，並透過該VM以rclone工具，可以很輕易的在雲端硬碟不同帳號搬移大量資料，並且不會耗用本機的空間及頻寬。會找到這個方法是因為google提供的各種方式，針對比較大的檔案(e.g. 10G~)都無法正常處，常常是下載的到一半出現403權限不足的錯誤，或是同步處理漏資料等等，詳細原因我不清楚，只知道這問題困擾我非常久。因此，找到上面連結提供的方式，真的是替我解決了一個大問題。在操作過程，有一些可能是版本不同的因素，導致執行的方式與文章說明不同，本身對rclone工具又不熟悉，因而卡關，經過一些摸索最終完成的移轉。因此想寫下這篇作為紀錄，提供給親友使用也方便後續查詢。
+GCP(Google Cloud Platform)為Google提供的雲端平台。在GCP申請一台雲端虛擬機器(以下稱VM，Virtual Machine)，並透過該VM以rclone工具，可以很輕易的在雲端硬碟不同帳號搬移大量資料，並且不會耗用本機的空間及頻寬。會找到這個方法是因為google提供的各種方式，針對比較大的檔案(e.g. 10G~)都無法正常處理，常常是下載的到一半出現403權限不足的錯誤，或是同步處理漏資料等等，詳細原因我不清楚，只知道這問題困擾我非常久。因此，找到上面連結提供的方式，真的是替我解決了一個大問題。在操作過程，有一些可能是版本不同的因素，導致執行的方式與文章說明不同，本身對rclone工具又不熟悉，因而卡關，經過一些摸索最終完成移轉。因此想寫下這篇作為紀錄，提供給親友使用，也方便後續查詢。
 
 ## 事前準備
 * 申請 GCP，要有Google帳號，帳號不一定要與google driver帳號一致，可另外申請一個專門帳號作為搬移資料的用途。
@@ -21,7 +21,7 @@ GCP(Google Cloud Platform)為Google提供的雲端平台。在GCP申請一台雲
 
 ## 一. 申請Google Cloud Platform (gcp) 並建立虛擬機器VM
 1. 申請網址: https://cloud.google.com/free?hl=zh-tw<br>
-直接點集"免費試用"，這邊可以看到新客戶可以有300美元抵免額。
+直接點擊"免費試用"，這邊可以看到新客戶可以有300美元抵免額。
 ![183279285-7058ceb4-8348-44b6-b916-cbf1f4a62895-compressed](https://user-images.githubusercontent.com/106213982/183292618-20b5b00f-3a09-43c5-b3da-d364f1896d40.jpg)
 2. 接著直接登入，可以使用現有帳號，或是建立新帳號。
 3. "機構或需求"依個人情況隨意填寫，服務條款全部勾選，直接按"繼續"。重要的是旁邊的說明"免費試用期結束後不會自動向您收費"。
@@ -43,24 +43,23 @@ GCP(Google Cloud Platform)為Google提供的雲端平台。在GCP申請一台雲
 ![183279844-8e86ece4-d280-4562-9bb9-00f7246dadda (1)-compressed](https://user-images.githubusercontent.com/106213982/183295043-2e109bd0-0584-4136-9773-d1fef51c908f.jpg)
 10. 建立執行個體
 ![183279830-7112bda2-f076-44a0-a978-8c77359fb1ea (1)-compressed](https://user-images.githubusercontent.com/106213982/183295064-bf479161-b5bb-4b2a-8482-7071a64764ec.jpg)
-11. <br>
+11. 機器設定<br>
 名稱：自訂<br>
 區域：us-central1 ， us-central1-a<br>
 機器設定 -> 機器系列 -> 一般用途<br>
 系列：N1<br>
 機器類型：f1-micro<br>
 ![183280184-312a01a1-7951-4d74-8f82-f7976009d197 (2)-compressed](https://user-images.githubusercontent.com/106213982/183295089-bbbb67bd-0a66-49fc-82e7-cc500c117121.jpg)
-12. <br>
-開機磁碟 -> [變更]<br>
+12. 開機磁碟 -> [變更]<br>
 ![183280194-98143866-9513-4cdb-8964-88296430c93f (2)-compressed](https://user-images.githubusercontent.com/106213982/183295379-0e2f838e-fb8f-43e7-bd34-e6a278c58e29.jpg)
-13. <br> 
+13. 開機磁碟<br> 
 開機磁碟：公開映像檔<br>
 作業系統：CentOS<br>
 版本：CentOS 7<br>
 開機磁碟類型：標準永久磁碟<br>
 大小(GB)：30<br>
 ![183280207-1ec8ec39-1469-43f0-a0fd-37541ed1df14-compressed](https://user-images.githubusercontent.com/106213982/183295439-de6db5b0-4e0c-4835-99b2-028bbf7dabbf.jpg)
-14. <br>
+14. 安全性<br>
 安全性 -> 受防護的 VM<br>
 啟用 vTPM -> 取消勾選<br>
 啟用完整性監控功能 -> 取消勾選<br>
@@ -73,7 +72,7 @@ GCP(Google Cloud Platform)為Google提供的雲端平台。在GCP申請一台雲
 ![183280304-43793c7d-9bd8-46fc-b1fe-40a9ab7e9e19-compressed](https://user-images.githubusercontent.com/106213982/183295672-7a8f2c82-80f9-454e-b6e0-77aab76e23aa.jpg)
 
 ## 二. 安裝Rclone及其他方便的工具
-1. 我們先安裝必要的 unzip 與 screen，unzip為解壓縮軟體，screen指令可以方便我們連回執行中的畫面查看執行結果<br>
+1. 我們先安裝必要的 unzip 與 screen，unzip為解壓縮軟體，screen指令可以讓我們在斷開連線後再重新連回執行中的畫面查看執行結果<br>
 輸入指令：sudo yum install -y unzip screen
 ![183281693-699c4da2-2d6f-42a6-8b76-2009c1e273fc-compressed](https://user-images.githubusercontent.com/106213982/183295723-a1bd8f81-8800-43a4-9070-02ec5adfe5e1.jpg)
 2. 看到Complete! 即表示安裝完成。
@@ -103,7 +102,7 @@ n/s/q> n<br>
 name> gd01<br>
 
 ![183282567-6133ad7e-fb4b-4eaf-8ab9-3a0cfbfac23b-compressed](https://user-images.githubusercontent.com/106213982/183295965-1b2219c1-0c54-4562-9a1d-04465d7bfefe.jpg)
-3. Rclone v1.59 會列出49個選項，Google Drive在第18個選項，所以輸入18。<br>
+3. Rclone v1.59 會列出49個選項，Google Drive在第18個選項，所以輸入18。如果因為版本差異，請根據文字選項選擇<br>
 
 Storage> 18<br>
 
@@ -144,11 +143,11 @@ y/n> n<br>
 
 ![183282695-b25cbcff-7ace-4027-be44-53b157448e98-compressed](https://user-images.githubusercontent.com/106213982/183296278-03126f96-4166-4a03-a0da-1ddd8ee6b264.jpg)
 
-10. 要求我們輸入 config_token>，我們需透過另一台電腦取得token，這點後續說明<br>
-首先我們複製紅框框住的文字 authorize "drive" "eyJz-------------------------"，找一個記事本存下來<br>
+10. 畫面要求我們輸入 config_token>，我們需透過另一台電腦取得token，這點後續說明<br>
+首先我們複製紅框框住的文字 authorize "drive" "eyJz-------------------------"，找一個記事本存下來。<br>
 ![183282740-0ea65c45-ef1d-4874-a8fb-2cadd51029ee-compressed](https://user-images.githubusercontent.com/106213982/183296319-fbdc3a5e-4627-495a-ba8c-9c1eef3e3d00.jpg)
 
-11. 因為我們是透過雲端平台建立的VM，無法開啟瀏覽器，因此要讓Rclone可以取得Google Drive的授權，我們需要另外找一台可以開啟瀏覽器的電腦，可以是你的本機Windows作業系統，也可以是任何Linux作業系統。我們這邊將以Windows的操作為例。到Rclone官網(https://rclone.org/downloads/)下載安裝檔，這邊選擇Window 64bits安裝檔。解壓縮後直接是可以執行的指令，不需要安裝，將目錄放在你想放置的位置。如下圖，透過瀏覽列，複製指令的路徑。
+11. 因為我們是透過雲端平台建立的VM，無法開啟瀏覽器，因此要讓Rclone可以取得Google Drive的授權，我們需要另外找一台可以開啟瀏覽器的電腦，可以是你的本機Windows作業系統，也可以是任何Linux作業系統。我們這邊將以Windows的操作為例。到Rclone官網(https://rclone.org/downloads/) 下載安裝檔，這邊選擇Window 64bits安裝檔。解壓縮後直接是可以執行的指令，不需要安裝，將目錄放在你想放置的位置。如下圖，透過瀏覽列，複製指令的路徑。
 ![183282762-1a4cab0f-47a9-4324-89e1-176e3acfc24f-compressed](https://user-images.githubusercontent.com/106213982/183296344-457ab632-8c68-49d4-a8bc-dcbf5d1b2603.jpg)
 
 12. 接著於作業系統左下角搜尋"PowerShell"，開啟Windows PowerShell<br>
