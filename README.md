@@ -1,4 +1,4 @@
-# 透過Google Cloud Platform (GCP)及rclone搬移Google Drive資料
+# 透過Google Cloud Platform (GCP)及Rclone搬移Google Drive資料
 
 本文參考:https://omega.idv.tw/kdb120/viewthread.php?threadid=4749
 
@@ -9,7 +9,7 @@
 感謝文章原作dc提供的方式，解決我教育帳號大量資料搬移的問題。
 
 ## 說明
-GCP(Google Cloud Platform)為Google提供的雲端平台。在GCP申請一台雲端虛擬機器(以下稱VM，Virtual Machine)，並透過該VM以rclone工具，可以很輕易的在雲端硬碟不同帳號搬移大量資料，並且不會耗用本機的空間及頻寬。會找到這個方法是因為google提供的各種方式，針對比較大的檔案(e.g. 10G~)都無法正常處理，常常是下載的到一半出現403權限不足的錯誤，或是同步處理漏資料等等，詳細原因我不清楚，只知道這問題困擾我非常久。因此，找到上面連結提供的方式，真的是替我解決了一個大問題。在操作過程，有一些可能是版本不同的因素，導致執行的方式與文章說明不同，本身對rclone工具又不熟悉，因而卡關，經過一些摸索最終完成移轉。因此想寫下這篇作為紀錄，提供給親友使用，也方便後續查詢。
+GCP(Google Cloud Platform)為Google提供的雲端平台。在GCP申請一台雲端虛擬機器(以下稱VM，Virtual Machine)，並透過該VM以Rclone工具，可以很輕易的在雲端硬碟不同帳號搬移大量資料，並且不會耗用本機的空間及頻寬。會找到這個方法是因為google提供的各種方式，針對比較大的檔案(e.g. 10G~)都無法正常處理，常常是下載的到一半出現403權限不足的錯誤，或是同步處理漏資料等等，詳細原因我不清楚，只知道這問題困擾我非常久。因此，找到上面連結提供的方式，真的是替我解決了一個大問題。在操作過程，有一些可能是版本不同的因素，導致執行的方式與文章說明不同，本身對Rclone工具又不熟悉，因而卡關，經過一些摸索最終完成移轉。因此想寫下這篇作為紀錄，提供給親友使用，也方便後續查詢。
 
 ## 事前準備
 * 申請 GCP，要有Google帳號，帳號不一定要與Google Drive帳號一致，可另外申請一個專門帳號作為搬移資料的用途。
@@ -66,7 +66,7 @@ GCP(Google Cloud Platform)為Google提供的雲端平台。在GCP申請一台雲
 右邊可以看到預估每月花費，但是因為我們在試用期，並且是Google Drive對傳，如果沒有手動啟用升級，是不會被收費的。<br>
 點擊"建立"
 ![183280214-f1aa568f-75fa-4466-a2d2-0fe821cc4464 (1)-compressed](https://user-images.githubusercontent.com/106213982/183295642-2293cc62-5533-4c0b-875c-18bcea750caa.jpg)
-15. <br>
+15. 開啟VM終端機<br>
 選擇"在瀏覽器視窗中開啟"<br>
 到這裡，我們完成在GCP上建立虛擬機器VM，並且設定VM執行的作業系統為Linux CentOS7，透過瀏覽器視窗可以開啟連接VM的指令介面終端機。接著，我們可以開始操作VM，安裝Rclone等相關工具。然後就可以使用Rclone開始搬移Google Drive的資料。
 ![183280304-43793c7d-9bd8-46fc-b1fe-40a9ab7e9e19-compressed](https://user-images.githubusercontent.com/106213982/183295672-7a8f2c82-80f9-454e-b6e0-77aab76e23aa.jpg)
