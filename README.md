@@ -216,7 +216,8 @@ y/e/d> y
 輸入指令2：screen -x gd01togd02<br>
 ![2022-8-8 上午 10-01-38](https://user-images.githubusercontent.com/106213982/183323924-a833a193-af09-47d8-b3a4-3310c06c7c64.png)
 
-6. 如果想先搬重要的資料夾而且資料夾有空格與非英文字的話，要用 "" 包起來，例如：rclone -vv copy gd01:Music/"我愛聽的歌 第一集" gd02:Music/"我愛聽的歌 第一集"
+6. 如果想先搬重要的資料夾而且資料夾有空格與非英文字的話，要用 "" 包起來。例如：<br>
+   rclone -vv copy gd01:Music/"我愛聽的歌 第一集" gd02:Music/"我愛聽的歌 第一集"
 7. 如果想設定Team Drive(小組雲端硬碟)，可以參考原文。基本上就是在設定Rclone第20點，選擇y，即可建立Team Drive遠端設定。
 
 
